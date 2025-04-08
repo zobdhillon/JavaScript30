@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(pexels-mikebirdy-3820181.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bands {
+    padding: 0;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    width: 50vw; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#bands li {
+    list-style-position: inside;
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px; 
+    padding: 20px 15px;
+    border-bottom: 1px solid #ddd; 
+    color: #333; 
+}
+
+#bands li:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 8px; 
+    border-bottom-right-radius: 8px; 
+
+}
+
+#bands li:hover {
+    background-color: #e9ecef; 
+    cursor: pointer;
+}

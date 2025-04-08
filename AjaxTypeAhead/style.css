@@ -1,0 +1,118 @@
+/* Basic reset for padding and margin */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #f8b704;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Style the search form */
+.input-cont {
+    margin-top: 5vw;
+    background: azure;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 450px;
+}
+
+/* Style the search input */
+.search {
+    width: 90%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 2rem;
+    text-align: center;
+    background-color: white;
+    color: Black;
+    cursor: pointer;
+}
+
+/* Style the suggestions list */
+.suggestions {
+    list-style-type: none;
+    padding: 0;
+    overflow-y: auto;
+    background: #fff;
+    width: 420px;
+    margin: auto;
+    cursor: pointer;
+}
+
+/* Style each suggestion item */
+.suggestions li {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #333;
+    position: relative; 
+    overflow: hidden;
+    perspective: 150px;
+    white-space: nowrap;
+    text-align: space-between;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hl {
+    background-color: #f8b704;
+    color: black; 
+    padding: 2px; 
+    border-radius: 3px; 
+  }
+
+.suggestions li::before,.suggestions li::after {
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 0;
+    width: 0;
+    content: '';
+    border: 0 solid transparent;
+}
+
+.suggestions li::after {
+    right: 0;
+}
+.suggestions li::before {
+    left: 0;
+}
+
+.suggestions li:nth-child(even) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, transparent 100%);
+}
+
+.suggestions li:nth-child(even)::after, .suggestions li:nth-child(even)::before {
+    border-top-color: #f8b704;
+    border-top-width: 3rem;
+}
+
+.suggestions li:nth-child(even)::before{
+    border-right-width: 5px;
+}
+.suggestions li:nth-child(even)::after{
+    border-left-width: 5px;
+}
+
+
+
+.suggestions li:nth-child(odd) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%,rgba(0,0,0,0.15) 100%);
+}
+
+.suggestions li:nth-child(odd)::after, .suggestions li:nth-child(odd)::before {
+    border-bottom-color: #f8b704;
+    border-bottom-width: 4rem;
+}
+
+.suggestions li:nth-child(odd)::before{
+    border-right-width: 6px;
+}
+.suggestions li:nth-child(odd)::after{
+    border-left-width: 6px;
+}
+

@@ -1,0 +1,68 @@
+/* Basic reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5ae14;
+  }
+  
+  /* Container for the inbox */
+  .inbox {
+    max-width: 70%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 10px 10px 0px 0px rgba(139, 130, 123, 0.274);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Individual item styling */
+  .item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 2px solid #eee;
+  }
+  
+  /* Remove border from the last item */
+  .item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Checkbox styling */
+  .item input[type="checkbox"] {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  /* Paragraph text styling */
+  .item p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    flex-grow: 1;
+  }
+
+  
+  /* Hover effect for items */
+  .item:hover {
+    background-color: #f9f9f9;
+  }
+
+  .item input[type="checkbox"]:checked + p {
+    text-decoration: line-through;
+    color: #000000;
+  }
+
+  .inbox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 40px; /* Adjust this value to align with the checkboxes */
+    width: 2px;
+    height: 100%;
+    background-color: #eee; /* Same color as the border below items */
+  }
+
+  

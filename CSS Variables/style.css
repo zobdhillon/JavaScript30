@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+body {
+    text-align: center;
+    background-color: #193549;
+    font-weight: 100;
+    font-size: 2rem;
+    color: white;
+}
+
+.controls {
+    margin-bottom: 50px;
+}
+
+img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}
+
+.h1 {
+    color: var(--base);
+}
+
+input {
+    width: 100px;
+    cursor: pointer;
+}
+
+a{
+    color: var(--base);
+    text-decoration: none;
+}

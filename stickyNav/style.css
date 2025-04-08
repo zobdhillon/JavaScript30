@@ -1,0 +1,88 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+header.landing {
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 50px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.navbar {
+    top: 0;
+    background-color: #333;
+    color: white;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    margin-right: 40px;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+}
+
+.fixed-nav .navbar {
+    position: fixed;;
+    box-shadow: 0 5px rgba(0,0,0,0.1);
+}
+
+li.logo {
+    max-width: 0;
+    overflow: hidden;
+    background: white;
+    transition: all 0.5s;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.fixed-nav li.logo {
+    max-width: 500px;
+}
+
+.fixed-nav li.logo a {
+    color: black;
+}
+
+.content {
+    padding: 50px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    margin: 100px;
+    overflow: hidden;
+}
+
+.content h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content p {
+    font-size: 1.2rem;
+}
